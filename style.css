@@ -1,7 +1,64 @@
 
-ul {
-	list-style-type: none;
+body { background-color: #C7F5FF;
+ }
+
+
+
+.container-2 {
+  display: grid;
+  grid-template-areas:
+    "physical personlity random";
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 3px;
+  padding: 5px;
 }
+  .container div {
+  padding: 10px;
+}
+.container div.header {
+  grid-area: header;
+  text-align: center;
+}
+.container div.sidebar {
+  grid-area: sidebar;
+  padding-left: 0;
+}
+.container div.info {
+  grid-area: info;
+}
+.container div.footer {
+  grid-area: footer;
+  text-align: center;  
+}
+
+
+.topnav {
+	background-color: #6FD8ED;
+	overflow:hidden;
+}
+
+.topnav a {
+   float: left;
+   color: #f2f2f2;
+   text-align: center;
+   padding: 14px 16px;
+   text-decoration: none;
+   font-size: 17px;
+}
+
+.topnav a:hover {
+   background-color: #4FAAFF;
+   color: black;
+}
+
+.topnav a.active {
+   background-color: #4FAAFF;
+   color: white;
+}
+
+
+ul {
+	list-style-type: none;}
 
 .container{
 	display: grid;
@@ -31,6 +88,4 @@ ul {
   grid-area: footer;
   text-align: center;  
 }
-div {
-  border: 2px solid limegreen;
-}
+
